@@ -29,9 +29,23 @@ npm run build
 
 ## Usage
 
+### With Claude Code
+
+After building the project, add the MCP server to Claude Code:
+
+```bash
+claude mcp add mysql node /path/to/mysql-mcp-server/dist/index.js
+```
+
+Or from within the project directory:
+```bash
+npm run build
+claude mcp add mysql node dist/index.js
+```
+
 ### As an MCP Server
 
-The server runs on stdio and can be configured in your MCP client:
+The server runs on stdio and can be configured in other MCP clients:
 
 ```json
 {
